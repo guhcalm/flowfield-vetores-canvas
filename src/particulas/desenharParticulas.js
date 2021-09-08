@@ -18,8 +18,8 @@ function mover( c, particula, vetores, intervalo, tela ) {
     let pos = { x: particula.pos.x, y: particula.pos.y }
     let cv = { x: Math.round( pos.x / intervalo.x ), y: Math.round( pos.y / intervalo.y ) }  // cv = coletar vetor mais proximo da posição
     let vel = { x: vetores[cv.x][cv.y].dx, y: vetores[cv.x][cv.y].dy }
-    pos.x += vel.x * .2
-    pos.y += vel.y * .2
+    pos.x += vel.x * .3
+    pos.y += vel.y * .3
 
     if ( pos.x <= 0 || pos.x >= tela.x ) {
         pos.x = Math.random() * tela.x

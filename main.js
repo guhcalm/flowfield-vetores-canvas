@@ -23,14 +23,14 @@ let coordenadas = criarMalha( tela, octave, malha )
 // iniciar o campo | retornará - campo[x][y][tempo]
 let campo = criarCampo( coordenadas )
 // iniciar particulas | retornará - particulas{ pos: {x, y, z} }
-let particulas = criarParticulas( coordenadas, 3000 )
+let particulas = criarParticulas( coordenadas, 1000 )
 
 
 
 
 function desenharBackGround() {
     ctx.beginPath()
-    ctx.fillStyle = 'rgba( 0, 0, 0, .06 )'
+    ctx.fillStyle = 'rgba( 0, 0, 0, .02 )'
     ctx.fillRect( 0, 0, coordenadas.tela.x, coordenadas.tela.y )
     ctx.fill()
 }

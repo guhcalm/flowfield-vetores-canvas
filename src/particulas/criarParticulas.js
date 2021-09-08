@@ -3,7 +3,7 @@ function Particulas( x, y ) {
         pos: { x, y },
         size: 2 * Math.random(),
         life: (20 * Math.random() + 5),
-        color: `rgba(${ 255 }, ${ 100 * Math.random()  + 20}, ${ 100 }, ${ 1 * Math.random()})`
+        color: `rgba(${ 255 }, ${ 100 * Math.random()  + 20}, ${ 30 }, ${ 1 * Math.random()})`
     }
 }
 
